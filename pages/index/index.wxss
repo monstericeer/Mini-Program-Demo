@@ -1,0 +1,32 @@
+.userContainer {
+  background: #f0f3f6;
+  min-height: 100vh;
+}
+.userContainer .userInfo {
+  padding: 40rpx 30rpx;
+  width: calc(100vw - 60rpx);
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  margin-bottom: 12rpx;
+}
+
+.userContainer .userAvatar {
+  margin-right: 40rpx;
+}
+
+.userContainer .userName {
+  width: calc(100vw - 240rpx);
+  max-width: calc(100vw - 240rpx); 
+  font-size: 40rpx;
+  font-weight: bold;
+  overflow-x: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.getUserInfoDialog .dialogView {
+  padding: 40rpx;
+  font-size: 32rpx;
+  text-align: center;
+}

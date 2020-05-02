@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="userContainer">
+	<view class="userInfo" bind:tap="checkUserInfo">
+    <van-image
+      round
+      class="userAvatar"
+      width="140rpx"
+      height="140rpx"
+      fit="cover"
+      src="{{ userInfo.avatar }}"
+    >
+      <text slot="error">加载失败</text>
+    </van-image>
+
+    <view class="userName">
+      {{ userInfo.name }}
+    </view>
+	</view>
+
+	<!-- 获取用户信息 -->
+	<van-dialog
+		class="getUserInfoDialog"
+		use-slot
+		title="提示"
+		show="{{ getUserInfoDialog }}"
+		show-cancel-button
+		confirm-button-open-type="getUserInfo"
+		bind:close="onClose"
+		bind:getuserinfo="getUserInfo"
+	>
+		<view class="dialogView">
+			该页面需要获取您的昵称等公开信息
+		</view>
+	</van-dialog>
+</view>
+
