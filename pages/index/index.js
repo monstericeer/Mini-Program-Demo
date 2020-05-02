@@ -12,7 +12,7 @@ Page({
   onLoad: function () {},
   onShow: function () {
     if (!app.globalData.userInfo) {
-      this.getAppLogin(0)
+      this.getAppLogin()
     }
   },
   // 用户登录接口
